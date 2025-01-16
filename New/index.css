@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#section1{
+    /* margin-left: 10%; */
+    left: 1;
+    right: 70%;
+    display: none;
+}
+#section2{
+
+}
+#img1{
+    margin-top: 0px;
+}
+#design:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 5px;
+}
+@media (max-width: 680px) {
+    #section2{
+        display: none;
+    }
+    #section1{
+        display: flex;
+    }
+    #section3{
+        display: none;
+    }
+}
+@media (max-width: 490px) {
+    #section1{
+        /* display: flex; */
+        flex: none;
+        margin-top: 50px !important;
+    }
+}
