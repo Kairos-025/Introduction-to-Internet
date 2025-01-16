@@ -1,0 +1,106 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <title>My Music</title>
+        <link rel="shortcut icon" href="./project.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="projectcss.css">
+</head>
+
+<body>  
+    
+  <div class="div">
+    <nav class="navbar">
+      <a href="myproject.html" style="margin-left: 40px; padding: 0px;">
+          <img src="./project.png" alt="MyProject" width="100px" height="80px" style="margin: 0px; padding: 0px;">
+      </a>
+          <div class="right">
+                  <a href="myproject.html" id="link">Home</a>
+                  <div class="subnav" id="link" class="home">
+                    <button onclick="myFunction()" class="subnavbtn" style="color: #ffa200; background-color: #000000;">Hobbies <i class="fas fa-caret-down"></i> </button>
+                      <div id="myDropdown" class="subnav-content">
+                        <a href="sports.html" id="">Sports</a>
+                        <a href="games.html" id="">Games</a>
+                        <a href="music.html" id="" class="home" style="color: #ffa200;">Music</a>
+                        <a href="videos.html" id="">Videos</a>
+                        <a href="books.html" id="">Books</a>
+                        <a href="vacations.html" id="">Vacations</a>
+                        <a href="dance.html" id="">Dance</a>
+                        <a href="others.html" id="">Others</a>
+                      </div>
+                  </div>
+                  <a href="citations.html" id="link">Citations</a>
+          </div>
+  </nav>
+  </div>
+  
+  <div class="header">
+    <header>
+        <h1>Music Resonates the Soul</h1>
+    </header>
+    <section id="content">
+        <div>
+            <h2>Music</h2>
+            <hr />
+            <p>
+                Music is a universal language that expresses emotions and captures the essence of the human spirit. Its impact on emotions is profound, with melodies evoking nostalgia and upbeat tempos lifting spirits. Music serves as a therapeutic outlet, providing solace in sadness and amplifying moments of happiness. It fosters connections among people, acting as a solitary companion and catalyst for shared experiences.
+            <br />
+            <br />
+                Beyond personal emotions, music plays a crucial role in cultural expression and identity. Different regions and communities have unique musical traditions reflecting their history and values. Traditional folk music, classical compositions, and contemporary genres contribute to the rich diversity of musical expression, preserving cultural heritage and fostering a sense of belonging.
+            <br />
+            <br />
+            <div class="div1">
+              <img src="./music.jpg" alt="Music" width="200px" height="300px" usemap="#music">
+              <map name="music">
+                <area target="_blank" alt="Wikipedia" title="Wikipedia" href="https://en.wikipedia.org/wiki/Guitar" coords="0,140,15,147,37,141,52,158,91,150,111,144,119,143,120,149,113,158,57,170,63,184,59,196,38,195,25,221,0,225" shape="poly">
+              </map>
+            </div>
+            <br />
+                Creating music spans skill levels and age groups, offering joy to all. Whether learning basic chords on a guitar or conducting a symphony, making music cultivates skills and enhances cognitive abilities, fostering discipline and creativity. Music also acts as a social glue, binding communities through festivals, concerts, and communal gatherings. The collective experience of singing along or swaying to a rhythm fosters a sense of unity and collective joy, breaking down barriers despite differences.
+            <br />
+            <br />
+                In the modern era, technology has transformed how we access and consume music. Streaming platforms, digital downloads, and online communities have made music more accessible. This digital landscape has changed how we discover artists and empowered independent musicians to reach global audiences without traditional industry barriers.
+            <br />
+            <br />
+                Music is a dynamic force in our lives, serving as a conduit for emotional expression, a vehicle for cultural identity, and a catalyst for social connection. Whether experienced through headphones on a solitary walk or in a crowded concert venue, music weaves through the fabric of our existence, enhancing experiences and shaping memories. The beauty of music lies not only in its melodies but also in its ability to resonate with the human soul, creating a harmonious symphony that unites us all.
+            </p>
+        </div>
+    </section>
+    <h4>
+      <a href="#top" style="text-decoration: none; color: #000000;">
+      <img src="./upload.png" alt="Top" width="24px" height="24px">
+      <br />
+      TOP
+      </a>
+    </h4>
+    </div>
+    <footer>
+        <p>&copy; 2023 My Project &nbsp;&nbsp; | 
+            <a href="https://www.facebook.com/" class="icon"><img src="./facebook.png" alt="Facebook" width="12px" height="12px">&nbsp;&nbsp;Facebook</a>
+            <a href="https://www.instagram.com/" class="icon"><img src="./instagram.png" alt="Instagram" width="12px" height="12px">&nbsp;&nbsp;Instagram</a>
+            <a href="https://www.twitter.com/" class="icon"><img src="./twitter.png" alt="Twitter" width="12px" height="12px">&nbsp;&nbsp;Twitter</a>
+        </p>
+    </footer>
+  <script>
+    function myFunction(){
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event){
+      if(!event.target.matches('.subnavbtn')){
+        var dropdowns = document.getElementsByClassName("subnav-content");
+        var i;
+        for(i = 0; i < dropdowns.length; i++){
+          var openDropdown = dropdowns[i];
+          if(openDropdown.classList.contains('show')){
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+  
+</body>
+
+</html>

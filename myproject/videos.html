@@ -1,0 +1,107 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <title>My Videos</title>
+        <link rel="shortcut icon" href="./project.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="projectcss.css">
+</head>
+
+<body>  
+    
+  <div class="div">
+    <nav class="navbar">
+      <a href="myproject.html" style="margin-left: 40px; padding: 0px;">
+          <img src="./project.png" alt="MyProject" width="100px" height="80px" style="margin: 0px; padding: 0px;">
+      </a>
+          <div class="right">
+                  <a href="myproject.html" id="link">Home</a>
+                  <div class="subnav" id="link" class="home">
+                    <button onclick="myFunction()" class="subnavbtn" style="color: #ffa200; background-color: #000000;">Hobbies <i class="fas fa-caret-down"></i> </button>
+                      <div id="myDropdown" class="subnav-content">
+                        <a href="sports.html" id="">Sports</a>
+                        <a href="games.html" id="">Games</a>
+                        <a href="music.html" id="">Music</a>
+                        <a href="videos.html" id="" class="home" style="color: #ffa200;">Videos</a>
+                        <a href="books.html" id="">Books</a>
+                        <a href="vacations.html" id="">Vacations</a>
+                        <a href="dance.html" id="">Dance</a>
+                        <a href="others.html" id="">Others</a>
+                      </div>
+                  </div>
+                  <a href="citations.html" id="link">Citations</a>
+          </div>
+  </nav>
+  </div>
+  
+  <div class="header">
+    <header>
+        <h1>Videos are Entertaining to Watch</h1>
+    </header>
+    <section id="content">
+        <div>
+            <h2>Videos</h2>
+            <hr />
+            <p>
+                Videos have become integral to our modern digital landscape, emerging as powerful tools for sharing information, entertainment, and personal experiences. One key strength of videos is their ability to combine visual and auditory elements, creating a dynamic medium that captures the viewer's attention.
+            <br />
+            <br />
+                In education, videos have transformed traditional learning methods by offering a visually stimulating way to convey complex concepts, catering to diverse learning styles. Whether through instructional videos demonstrating practical skills or animated explanations simplifying abstract ideas, video content broadens the accessibility of knowledge.
+            <br />
+            <br />
+                Beyond education, videos serve as potent means of storytelling and entertainment. With platforms like YouTube and TikTok, individuals can be creators and storytellers, producing content ranging from vlogs offering glimpses into personal lives to impactful videos sharing powerful messages.
+            <br />
+            <br />
+            <div class="div1">
+              <a href="https://www.costco.ca/televisions.html">
+                <img src="./tv.jpg" alt="Tv" width="356px" height="200px">
+              </a>
+            </div>
+            <br />
+                Videos also play a crucial role in marketing and advertising, allowing businesses to showcase products, tell brand stories, and engage with their audience. The immersive nature of videos influences purchasing decisions and brand perception, offering consumers a unique experience beyond static images or text.
+            <br />
+            <br />
+                The accessibility of video creation tools has democratized the process, enabling individuals and businesses of varying scales to produce compelling content. Whether for personal expression, educational purposes, or promotional activities, videos have become a versatile means of communication, transcending linguistic and cultural barriers.
+            <br />
+            <br />
+                Videos have revolutionized how we consume information and express ourselves in the digital age. Their capacity to convey emotions, tell stories, and deliver information visually compellingly has made them indispensable in our online experience. As technology advances, the role of videos in shaping our communication landscape will likely evolve, offering new possibilities for creativity, connection, and engagement.
+            </p>
+        </div>
+    </section>
+    <h4>
+      <a href="#top" style="text-decoration: none; color: #000000;">
+      <img src="./upload.png" alt="Top" width="24px" height="24px">
+      <br />
+      TOP
+      </a>
+    </h4>
+    </div>
+    <footer>
+        <p>&copy; 2023 My Project &nbsp;&nbsp; | 
+            <a href="https://www.facebook.com/" class="icon"><img src="./facebook.png" alt="Facebook" width="12px" height="12px">&nbsp;&nbsp;Facebook</a>
+            <a href="https://www.instagram.com/" class="icon"><img src="./instagram.png" alt="Instagram" width="12px" height="12px">&nbsp;&nbsp;Instagram</a>
+            <a href="https://www.twitter.com/" class="icon"><img src="./twitter.png" alt="Twitter" width="12px" height="12px">&nbsp;&nbsp;Twitter</a>
+        </p>
+    </footer>
+  <script>
+    function myFunction(){
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event){
+      if(!event.target.matches('.subnavbtn')){
+        var dropdowns = document.getElementsByClassName("subnav-content");
+        var i;
+        for(i = 0; i < dropdowns.length; i++){
+          var openDropdown = dropdowns[i];
+          if(openDropdown.classList.contains('show')){
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+
+</html>

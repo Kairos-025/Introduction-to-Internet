@@ -1,0 +1,105 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <title>My Dance</title>
+        <link rel="shortcut icon" href="./project.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="projectcss.css">
+</head>
+
+<body>  
+    
+  <div class="div">
+    <nav class="navbar">
+      <a href="myproject.html" style="margin-left: 40px; padding: 0px;">
+          <img src="./project.png" alt="MyProject" width="100px" height="80px" style="margin: 0px; padding: 0px;">
+      </a>
+          <div class="right">
+                  <a href="myproject.html" id="link">Home</a>
+                  <div class="subnav" id="link" class="home">
+                    <button onclick="myFunction()" class="subnavbtn" style="color: #ffa200; background-color: #000000;">Hobbies <i class="fas fa-caret-down"></i> </button>
+                      <div id="myDropdown" class="subnav-content">
+                        <a href="sports.html" id="">Sports</a>
+                        <a href="games.html" id="">Games</a>
+                        <a href="music.html" id="">Music</a>
+                        <a href="videos.html" id="">Videos</a>
+                        <a href="books.html" id="">Books</a>
+                        <a href="vacations.html" id="">Vacations</a>
+                        <a href="dance.html" id="" class="home" style="color: #ffa200;">Dance</a>
+                        <a href="others.html" id="">Others</a>
+                      </div>
+                  </div>
+                  <a href="citations.html" id="link">Citations</a>
+          </div>
+  </nav>
+  </div>
+  
+  <div class="header">
+    <header>
+        <h1>Dancing to the Rhythm</h1>
+    </header>
+    <section id="content">
+        <div>
+            <h2>Dance</h2>
+            <hr />
+            <p>
+                Dance, a form of human movement, holds a place in cultures worldwide, weaving through social gatherings, celebrations, and personal rituals. From folk dances to contemporary styles, dance is a universal language communicating emotions, stories, and collective joy. At its core, dance is an art form reflecting the creativity and diversity of human expression.
+            <br />
+            <br />
+                One remarkable aspect of dance is its ability to convey emotions and narratives without words. Through the rhythmic interplay of bodies, dancers tell stories ranging from ancient myths to modern interpretations of everyday life. The expressive power of dance allows individuals to communicate joy, sorrow, love, and myriad emotions that are challenging to express through verbal language alone.
+            <br />
+            <br />
+                Dance is pivotal in cultural identity, serving as a repository of traditions and values. Different regions and communities boast unique dance forms, preserving their history and heritage. Traditional dances often carry symbolic meanings, representing daily life, spiritual beliefs, or significant events. Participating in these dances allows individuals to connect with their roots and contribute to the continuity of cultural practices.
+            <br />
+            <br />
+            <div class="div1">
+              <img src="./dance.jpg" alt="Dance" width="300px" height="200px">
+            </div>
+            <br />
+                Dancing is not limited to professionals; it is a joyful and inclusive activity accessible to people of all ages and backgrounds. Whether in formal dance classes or spontaneous celebrations, the joy of moving to music transcends skill levels. Dancing promotes physical well-being, encouraging flexibility, coordination, and cardiovascular health. Beyond its physical benefits, dancing fosters a sense of community and shared experience, as seen in social dances that bring people together for collective enjoyment.
+            <br />
+            <br />
+                Contemporary dance has found new platforms for expression through various styles and genres. From classical ballet to hip-hop, dance continues to evolve, reflecting the changing dynamics of society. Dance competitions, cultural festivals, and social media platforms allow individuals to showcase their talent and creativity, reaching global audiences.
+            <br />
+            <br />
+                In essence, dance celebrates the human spirit, a rhythmic expression of emotions, stories, and cultural identity. It transcends linguistic boundaries, fostering connection and understanding among diverse communities. Whether as a professional pursuit, a cultural tradition, or a spontaneous expression of joy, dance enriches our lives, promoting physical well-being and a shared sense of humanity. In a world where words may fall short, dance steps in, painting a vibrant and universal canvas of human expression.
+            </p>
+        </div>
+    </section>
+    <h4>
+      <a href="#top" style="text-decoration: none; color: #000000;">
+      <img src="./upload.png" alt="Top" width="24px" height="24px">
+      <br />
+      TOP
+      </a>
+    </h4>
+    </div>
+    <footer>
+        <p>&copy; 2023 My Project &nbsp;&nbsp; | 
+            <a href="https://www.facebook.com/" class="icon"><img src="./facebook.png" alt="Facebook" width="12px" height="12px">&nbsp;&nbsp;Facebook</a>
+            <a href="https://www.instagram.com/" class="icon"><img src="./instagram.png" alt="Instagram" width="12px" height="12px">&nbsp;&nbsp;Instagram</a>
+            <a href="https://www.twitter.com/" class="icon"><img src="./twitter.png" alt="Twitter" width="12px" height="12px">&nbsp;&nbsp;Twitter</a>
+        </p>
+    </footer>
+  <script>
+    function myFunction(){
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event){
+      if(!event.target.matches('.subnavbtn')){
+        var dropdowns = document.getElementsByClassName("subnav-content");
+        var i;
+        for(i = 0; i < dropdowns.length; i++){
+          var openDropdown = dropdowns[i];
+          if(openDropdown.classList.contains('show')){
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+
+</html>

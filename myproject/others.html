@@ -1,0 +1,102 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
+<!-- XML/XHTML boilerplate code -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+        <title>Others</title>
+        <link rel="shortcut icon" href="./project.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="projectcss.css">
+</head>
+
+<body>  
+    
+  <div class="div">
+    <nav class="navbar">
+      <a href="myproject.html" style="margin-left: 40px; padding: 0px;">
+          <img src="./project.png" alt="MyProject" width="100px" height="80px" style="margin: 0px; padding: 0px;">
+      </a>
+          <div class="right">
+                  <a href="myproject.html" id="link">Home</a>
+                  <div class="subnav" id="link" class="home">
+                    <button onclick="myFunction()" class="subnavbtn" style="color: #ffa200; background-color: #000000;">Hobbies <i class="fas fa-caret-down"></i> </button>
+                      <div id="myDropdown" class="subnav-content">
+                        <a href="sports.html" id="">Sports</a>
+                        <a href="games.html" id="">Games</a>
+                        <a href="music.html" id="">Music</a>
+                        <a href="videos.html" id="">Videos</a>
+                        <a href="books.html" id="">Books</a>
+                        <a href="vacations.html" id="">Vacations</a>
+                        <a href="dance.html" id="">Dance</a>
+                        <a href="others.html" id="" class="home" style="color: #ffa200;">Others</a>
+                      </div>
+                  </div>
+                  <a href="citations.html" id="link">Citations</a>
+          </div>
+  </nav>
+  </div>
+  
+  <div class="header">
+    <header>
+        <h1>My Other Interests</h1>
+    </header>
+    <section id="content">
+        <div>
+            <h2>Others</h2>
+            <hr />
+            <p>
+                Engaging in hobbies provides a delightful escape from the hustle and bustle of everyday life, allowing individuals to cultivate their passions and nurture their well-being. Gardening, painting, and playing a musical instrument are exemplary hobbies, each offering a unique avenue for self-expression and personal fulfillment.
+            <br />
+            <br />
+                Gardening, often called the art of cultivating the earth, is a hobby that connects individuals with nature profoundly. Tending to plants, be they vibrant flowers or bountiful vegetables, brings a sense of tranquillity and purpose. As green thumbs dig into the soil, plant seeds, and nurture growth, they witness the miraculous cycle of life. Gardening is not merely about producing beautiful blooms or a harvest; it is a therapeutic practice that fosters patience, mindfulness, and a deep appreciation for the interconnectedness of all living things.
+            <br />
+            <br />
+                Conversely, painting is a visual art form that beckons individuals to unleash their creativity on a canvas. Whether using vibrant acrylics, soothing watercolours, or expressive oils, painters immerse themselves in a world of colours and shapes. The brush strokes become a means of self-expression, allowing emotions and ideas to manifest visually. Painting is a therapeutic outlet that encourages introspection, providing a medium for artists to communicate their unique perspectives and narratives. The blank canvas transforms into endless possibilities, where every stroke tells a story, and every colour conveys an emotion.
+            <br />
+            <br />
+            <div class="div1">
+              <img src="./paint.jpg" alt="Paint" width="200px" height="300px">
+            </div>
+            <br />
+                Playing a musical instrument adds a harmonious dimension to the world of hobbies. Whether strumming the strings of a guitar, coaxing melodies from a piano, or mastering the intricacies of a flute, musicians embark on a journey of sonic exploration. Playing an instrument involves discipline, patience, and a commitment to continuous improvement. Beyond the technical aspects, playing music is an emotional journey, with each note becoming a vessel for expression. Musicians find solace in the rhythm, joy in the melody, and a profound connection with the soul-stirring power of music.
+            <br />
+            <br />
+                What unites these hobbies is the therapeutic aspect they bring to one's life. Gardening, painting, and playing a musical instrument offer a respite from the demands of daily routines, allowing individuals to recharge their mental and emotional energies. These hobbies also foster a sense of accomplishment as individuals witness the tangible outcomes of their efforts – whether it is a blooming garden, a vibrant painting, or a beautifully played piece of music. Moreover, they provide a means of connecting with others who share similar interests, creating communities of like-minded enthusiasts.
+            </p>
+        </div>
+    </section>
+    <h4>
+      <a href="#top" style="text-decoration: none; color: #000000;">
+      <img src="./upload.png" alt="Top" width="24px" height="24px">
+      <br />
+      TOP
+      </a>
+    </h4>
+    </div>
+    <footer>
+        <p>&copy; 2023 My Project &nbsp;&nbsp; | 
+            <a href="https://www.facebook.com/" class="icon"><img src="./facebook.png" alt="Facebook" width="12px" height="12px">&nbsp;&nbsp;Facebook</a>
+            <a href="https://www.instagram.com/" class="icon"><img src="./instagram.png" alt="Instagram" width="12px" height="12px">&nbsp;&nbsp;Instagram</a>
+            <a href="https://www.twitter.com/" class="icon"><img src="./twitter.png" alt="Twitter" width="12px" height="12px">&nbsp;&nbsp;Twitter</a>
+        </p>
+    </footer>
+  <script>
+    function myFunction(){
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event){
+      if(!event.target.matches('.subnavbtn')){
+        var dropdowns = document.getElementsByClassName("subnav-content");
+        var i;
+        for(i = 0; i < dropdowns.length; i++){
+          var openDropdown = dropdowns[i];
+          if(openDropdown.classList.contains('show')){
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+
+</html>
